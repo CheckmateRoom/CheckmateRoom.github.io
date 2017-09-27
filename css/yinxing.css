@@ -1,0 +1,290 @@
+ html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    /* 背景 */
+    .bg1{
+        background: url("../素材/bg1.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    .bg2{
+        background: url("../素材/bg2.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    .bg3{
+        background: url("../素材/bg5.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+    .bg4{
+        background: url("../素材/bg7.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+    .bg5{
+        background: url("../素材/bg8.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+    .bg6{
+        background: url("../素材/bg9.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+    /* 第一张样式 */
+    .music{
+    	height: 60px;
+    	position: absolute;
+    	top:20px;
+    	right: 20px;
+    }
+    .s1bg{
+    	background: url(../素材/known-more.png);
+    	background-size: 100% 100%;
+    	height: 32px;
+    	line-height: 32px;
+    }
+    .jiantou{
+        width: 32px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 20px;
+        left:47%;
+        z-index: 10000;
+    }
+    .jiantou img{
+        animation-name:imageRoll;/* 关键帧名字 */
+        animation-duration:1s;/* 持续的时间 */
+        animation-timing-function:linear;/* 时间曲线 */
+        animation-delay:0s;/* 延时时间 */
+        animation-iteration-count:infinite;/* 播放次数，可以设置数字 */
+        animation-direction:normal;
+    }
+    @keyframes imageRoll{
+            to{
+                transform:translateY(-30px);
+                opacity:0.4;
+            }
+
+        }
+    .music{
+         z-index: 10000;
+    }
+    .music img{
+        animation-name:wuliang;/* 关键帧名字 */
+        animation-duration:4s;/* 持续的时间 */
+        animation-timing-function:linear;/* 时间曲线 */
+        animation-delay:0s;/* 延时时间 */
+        animation-iteration-count:infinite;/* 播放次数，可以设置数字 */
+        animation-direction:normal;
+    }
+    @keyframes wuliang{
+            to{
+                transform:rotate(1800deg) ;
+            }
+
+        
+        }
+    .kuang1:first-child{
+        font-size: 20px;
+        color: white;
+        font-weight: 600;
+    }
+    .bg1>div :nth-child(2){
+        font-size: 30px;
+        color: white;
+        font-weight: 200;
+    }
+    .bg1>div :nth-child(5){
+        font-size: 30px;
+        color: white;
+        font-weight: 100;
+    }
+    .bg1>div :nth-child(6){
+        font-size: 18px;
+        color: white;
+        font-weight: 100;
+    }
+    .s1bg>span{
+        font-size: 18px;
+        color: black;
+        font-weight: 100;
+    }
+
+    
+
+    /* 第二张的样式 */
+    .bg2 img{
+        width: 90%;
+        height: 90%;
+    }
+    .bg2 .kuang2{
+        margin-top:20px;
+        background:url(../素材/bg3.png);
+        background-size:100% 100%;
+        width: 80%;
+        height:80%;
+    }
+    .txt{
+        padding-top:30px;
+       /*  border: 1px solid #000; */
+        margin-left: 30px;
+    }
+    .bg2 .txt{
+        float:left;
+        text-align: left;
+        padding-left:10px;
+    }
+    .bg2 img{
+        height:150px;
+        width:120px;
+        float:right;
+        overflow:hidden;
+    }
+    .bg2 .txt :nth-child(2){
+        font-size: 20px;
+        color: #c5c2a3;
+        font-weight: 100;
+        border: 1px dashed #c5c2a3;
+        width: 35%;
+        text-align: center;
+    }
+    .txt p{
+        color: #c5c2a3;
+        font-size: 18px;
+    }
+   /*  第三张样式 */
+    .bg3 .kuang3{
+        height:80%;
+        width:80%;
+        /* border: 1px solid #000; */
+    }
+    .kuang3 img{
+        height:60px;
+        padding-left:40px;
+       float: left;
+       overflow: hidden;
+    }
+    .kuang3>.content3{
+        height:60px;
+        margin-bottom:20px;
+    }
+    .content3 p{
+        margin-bottom: 10px;
+        display:inline-block;
+
+    }
+    .kuang h1{
+        font-size: 42px;
+        border: 1px dashed #c5c2a3;
+    }
+   /* 第四张样式 */
+   .kuang4{
+        width: 90%;
+        /* height: 50%; */
+        margin-bottom: 30%;
+        position: relative;
+   }
+   .kuang4>p:first-child{
+        font-size: 42px;
+        border: 3px dashed #31b9ab;
+   }
+   .list{
+       height: 50px;
+       width: 100%;
+       margin-bottom: 20px;
+   }
+   .list .left{
+        width: 45%;
+        height: 100%;
+        text-align: left;
+        display: inline-block;
+        color: white;
+   }
+   .circle1{
+        width: 10px;
+        height: 10px;
+        background-color: pink;
+        border-radius: 5px;
+        display: inline-block;
+        position: relative;
+        bottom: 20px;
+        z-index: 10;
+        
+   }
+   .list .right{
+        width: 40%;
+        text-align: right;
+        display: inline-block;
+        position: relative;
+        bottom: 20px;
+        color: white;
+   }
+   .line{
+        width: 5px;
+        height: 350px;
+        background-color: #22aaa6;
+        position: absolute;
+        top:30%;
+        left: 51.5%;
+        border-radius: 19px;
+        
+       }
+   
+   @keyframes extend{
+        from{
+            
+            height: 0px;
+        }
+        to{
+            
+            height: 350px;
+        }
+        
+    }
+
+   /* 第五张样式 */
+   .kuang5{
+        position: relative;
+        bottom: 202px;
+   }
+   .kuang5 p,h2{
+        color: white;
+        font-family: "微软雅黑";
+        margin-bottom: 30px;
+   }
+   /* 第六张样式 */
+   .kuang6 h1,h3{
+        color: white;
+        font-family: "微软雅黑";
+        margin-bottom: 30px;
+   }
+
+
